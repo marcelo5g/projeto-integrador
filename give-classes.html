@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +20,9 @@
     <link rel="stylesheet" href="./public/styles/forms.css">
     <link rel="stylesheet" href="./public/styles/page-give-classes.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
+        rel="stylesheet">
 
     <script src="/scripts/addField.js" defer></script>
 
@@ -28,6 +31,7 @@
     <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
 
 </head>
+
 <body id="page-give-classes">
     <!-- <h1 class="red">Proffy</h1> -->
     <!-- <h1 id="page-give-classes">Proffy</h1> -->
@@ -36,13 +40,13 @@
         <header class="page-header">
             <div class="top-bar-container">
                 <a href="/">
-                <img src="./public/images/icons/back.svg" alt="Voltar">
+                    <img src="./public/images/icons/back.svg" alt="Voltar">
                 </a>
                 <img src="./public/images/logo.svg" alt="Proffy">
             </div>
 
             <div class="header-content">
-                <strong>Agende o melhor hoário</strong>
+                <strong>Agende o melhor horário</strong>
                 <p>É só preencher o formulário abaixo</p>
             </div>
 
@@ -56,28 +60,28 @@
                     <div class="input-block">
                         <label for="name">Nome</label>
                         <input name="name" id="name" required>
-                    </div>     
-                    
+                    </div>
+
                     <div class="select-block">
                         <label for="school"> Escola </label>
                         <select name="school" id="school" required>
                             <option value="">Selecione uma Escola</option>
                             <option value="1">EMEIEF José Emídio de Aguiar</option>
-                            <option value="2">EMEF Profº Ézio Berzaghi</option>                           
+                            <option value="2">EMEF Profº Ézio Berzaghi</option>
                         </select>
-                    </div> 
+                    </div>
 
                     <div class="select-block">
                         <label for="period"> Período </label>
                         <select name="period" id="period" required>
                             <option value="">Selecione um período</option>
                             <option value="M">Manhã</option>
-                            <option value="T">Tarde</option>                           
+                            <option value="T">Tarde</option>
                         </select>
-                    </div> 
+                    </div>
 
                 </fieldset>
-               
+
 
                 <fieldset>
                     <legend>Sobre a aula</legend>
@@ -96,7 +100,7 @@
                             <option value="9">Língua Portuguesa</option>
                             <option value="10">Química</option>
                         </select>
-                    </div>                    
+                    </div>
 
                 </fieldset>
 
@@ -109,8 +113,9 @@
 
                         <div class="select-block">
                             <label for="date">Data</label>
-                                <input type="datetime-local" name="date" id="name" placeholder="Selecione uma Data" required>                                                         
-                        </div>                       
+                            <input type="datetime-local" name="date" id="name" placeholder="Selecione uma Data"
+                                required>
+                        </div>
 
                     </div>
 
@@ -118,78 +123,78 @@
 
                 <fieldset>
                     <legend>
-                        Selecione um Carrinho de Chromebooks                        
+                        Selecione um Carrinho de Chromebooks
                     </legend>
-        
+
                     <div class="items-grid">
                         <li data-id="carrinho-01">
                             <img src="./public/images/icons/notebook.png" alt="carrinho-01">
                             <span>Carrinho 01</span>
                         </li>
-        
+
                         <li data-id="carrinho-02">
                             <img src="./public/images/icons/notebook.png" alt="carrinho-02">
                             <span>Carrinho 02</span>
                         </li>
-        
+
                         <li data-id="carrinho-03">
                             <img src="./public/images/icons/notebook.png" alt="carrinho-03">
                             <span>Carrinho 03</span>
                         </li>
-        
+
                         <li data-id="carrinho-04">
                             <img src="./public/images/icons/notebook.png" alt="carrinho-04">
                             <span>Carrinho 04</span>
                         </li>
-        
+
                         <li data-id="carrinho-05">
                             <img src="./public/images/icons/notebook.png" alt="carrinho-05">
                             <span>Carrinho 05</span>
                         </li>
-        
+
                         <li data-id="carrinho-06">
                             <img src="./public/images/icons/notebook.png" alt="carrinho-06">
                             <span>Carrinho 06</span>
                         </li>
-        
+
                     </div>
-        
+
                     <input type="hidden" name="items">
-        
-                </fieldset
 
-            </form>
+                </fieldset </form>
 
 
-            <footer>
-                <p>
-                    <img src="./public/images/icons/warning.svg" alt="Aviso importante">
-                    Importante! <br> Preencha todos os dados
-                </p>
-                <!-- Preciso avisar o html que o botão irá enviar os dados do formuario (form=ID) acima -->
-                <button type="submit" form="create-class" >Salvar cadastro</button>
-            </footer>
+                <footer>
+                    <p>
+                        <img src="./public/images/icons/warning.svg" alt="Aviso importante">
+                        Importante! <br> Preencha todos os dados
+                    </p>
+                    <!-- Preciso avisar o html que o botão irá enviar os dados do formuario (form=ID) acima -->
+                    <button type="submit" form="create-class">Salvar cadastro</button>
+                </footer>
 
         </main>
-    </div>   
+    </div>
 
     <!-- flatpickr -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"> </script>
     <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
     <script src="https://npmcdn.com/flatpickr/dist/l10n/pt.js"></script>
 
-    <script>        
+    <script>
         flatpickr("input[type=datetime-local]", {
-            "locale": "pt", 
+            "locale": "pt",
             dateFormat: "Y-m-d",
             altInput: true,
             altFormat: "j / F / Y",
             minDate: "today",
-            inline: true });        
+            inline: true
+        });
     </script>
 
 
     <script src="./public/scripts/create-point.js"></script>
-    
+
 </body>
+
 </html>
