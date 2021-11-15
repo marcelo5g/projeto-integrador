@@ -1,6 +1,6 @@
 
-//Ítens de coleta
-//Pegar todos os Li's 
+//Selecionar carrinhos 
+//Pegar todos carrinhos 
 const itemsToCollect = document.querySelectorAll(".items-grid li")
 
 for (const item of itemsToCollect) {
